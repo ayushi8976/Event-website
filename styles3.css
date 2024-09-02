@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif; 
+    color: white;
+}
+
+main {
+    background-image: url(https://s.tmimgcdn.com/scr/800x500/403400/dark-blue-and-pink-color-gradient-smoke-wallpaper-background-design-v2_403402-original.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    overflow-x: hidden;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style-type: none;
+    gap: 5px 20px;
+    margin: 0;
+    background-color: rgba(51, 51, 51, 0.8);
+}
+ul, li, a {
+    text-decoration: none;
+    color: rgb(244, 242, 242);
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 5px 20px;
+    color: rgb(253, 248, 248);
+    background-color: rgba(51, 51, 51, 0.8);
+    overflow: hidden;
+}
+
+.img-container {
+    display: flex;
+    gap: 25px; 
+    border: 2px solid rgb(6, 6, 6);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 50px;
+    overflow: hidden;
+
+}
+.head {
+    text-align: center;
+    font-size: 20px;
+}
+
+.img h1 {
+    text-align: center;
+    margin: 0;
+    font-size: small;
+}
+
+.img h3 {
+    text-align: center;
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto; 
+}
+
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .img-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .head {
+        font-size: 16px;
+    }
+
+    .img h1 {
+        font-size: medium;
+    }
+
+    .img h3 {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .nav {
+        font-size: 14px;
+    }
+
+    .img-container {
+        padding: 10px;
+    }
+
+    .head {
+        font-size: 14px;
+    }
+
+    .img h1 {
+        font-size: small;
+    }
+
+    .img h3 {
+        font-size: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

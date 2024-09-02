@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; /* Change to full width for responsiveness */
+}
+
+header {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    background-color: black;
+    margin: 0; /* Reset margin for consistency */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgb(241, 230, 230);
+}
+
+.contact h2 {
+    text-align: center;
+    color: rgb(63, 9, 9);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px 0;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #13385c;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        padding: 10px;
+        background-color: black;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    .contact {
+        padding: 10px;
+    }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    header {
+        font-size: 14px;
+    }
+    
+    nav ul {
+        padding: 5px;
+        background-color: black;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .contact {
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+    input, textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    footer {
+        padding: 5px;
+    }
+}

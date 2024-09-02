@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #e7caca;
+    overflow: hidden;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.concert-info {
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.concert-info h2 {
+    font-size: 2rem;}
+
+.buy-tickets {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #747fd1;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.buy-tickets:hover {
+    background-color: rgb(230, 161, 161);
+    color: #2c040d;
+    border: 1px solid #3e4dbf;
+    transition: 0.5s;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 0.5rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+
+    .concert-info h2 {
+        font-size: 1.75rem;
+    }
+
+    .buy-tickets {
+        font-size: 0.875rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .concert-info h2 {
+        font-size: 1.5rem; 
+    }
+
+    .buy-tickets {
+        font-size: 0.75rem; 
+    }
+
+    footer p {
+        font-size: 0.75rem;
+    }
+}
